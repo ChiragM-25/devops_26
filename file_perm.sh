@@ -3,7 +3,7 @@
 file=$1
 
 if [ -z "$file" ]; then
-    echo "Usage: $0 <filename>"
+    echo "$0 <enter_filename>"
     exit 1
 else
     if [ ! -f "$file" ]; then
