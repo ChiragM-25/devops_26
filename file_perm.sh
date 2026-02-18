@@ -22,6 +22,8 @@ else
     chmod +x "$file"
     if [ $? -eq 0 ]; then
         echo "Execute permission added successfully."
+        ls -l "$file"
+        echo " "
     else
         echo "Failed to add execute permission."
     fi
