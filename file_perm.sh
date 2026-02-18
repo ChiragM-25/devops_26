@@ -3,7 +3,7 @@
 file=$1
 
 if [ -z "$file" ]; then
-    echo "Usage: $0 <filename>"
+    echo "$0 <enter_filename>"
     exit 1
 else
     if [ ! -f "$file" ]; then
@@ -22,6 +22,8 @@ else
     chmod +x "$file"
     if [ $? -eq 0 ]; then
         echo "Execute permission added successfully."
+        ls -l "$file"
+        echo " "
     else
         echo "Failed to add execute permission."
     fi
