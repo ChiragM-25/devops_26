@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
-IFS=$'\n\t'
+#!/usr/bin
 
 service_name=${1:-}
 if [[ -z "$service_name" ]]; then
